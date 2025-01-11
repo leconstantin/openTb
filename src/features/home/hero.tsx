@@ -2,26 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-
-const heroContent = [
-  {
-    title: "Empowering Minds",
-    subtitle:
-      "Nurturing curiosity and fostering growth and Preparing students for tomorrow's challenges",
-    image: "/hero_a.jpg",
-  },
-  {
-    title: "Building Futures",
-    subtitle:
-      " Meeting the needs of young people through quality, christian and education. Together we can. 🖐️",
-    image: "/hero_b.jpg",
-  },
-  {
-    title: "Inspiring Excellence",
-    subtitle: "Encouraging students to reach their full potential",
-    image: "/hero_c.jpg",
-  },
-];
+import { heroContent } from "@/config/home";
 
 export default function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,9 +35,9 @@ export default function Hero() {
           }`}
         />
       ))}
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center">
         <div
-          className={`text-center transition-opacity duration-1000 ${
+          className={`text-center transition-opacity duration-1000 max-w-3xl mx-auto ${
             isTransitioning ? "opacity-0" : "opacity-100"
           }`}
         >
