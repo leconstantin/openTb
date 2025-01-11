@@ -2,7 +2,7 @@ import AllHotels from "@/features/home/AllHotels";
 import Hero from "@/features/home/hero";
 import MenuList from "@/features/home/MenuList";
 import SearchTab from "@/features/home/SearchTab";
-import SubHero from "@/features/home/subHero";
+import HeaderTop from "@/features/home/subHero";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <Hero />
       </div>
       <div className=" min-h-screen">
-        <SubHero />
+        <HeaderTop />
         <SearchTab />
         <MenuList />
         <AllHotels />
