@@ -4,10 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { siteConfig } from "@/config/site";
-import Hero from "@/features/layout/hero";
-import HeaderTop from "@/features/layout/HeaderTop";
-import SearchTab from "@/features/layout/SearchTab";
-import MenuList from "@/features/layout/MenuList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,16 +34,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <header className=" bg-white">
-            <div className="hidden md:flex">
-              <Hero />
-            </div>
-            <div className=" min-h-screen">
-              <HeaderTop />
-              <SearchTab />
-              <MenuList />
-            </div>
-          </header>
           {children}
           <TailwindIndicator />
         </ThemeProvider>
