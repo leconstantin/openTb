@@ -10,10 +10,12 @@ export default function Home() {
       <div className="hidden md:flex">
         <Hero />
       </div>
-      <SubHero />
-      <SearchTab />
-      <MenuList />
-      <AllHotels />s
+      <div className=" min-h-screen">
+        <SubHero />
+        <SearchTab />
+        <MenuList />
+        <AllHotels />
+      </div>
     </main>
   );
 }
