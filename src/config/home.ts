@@ -8,7 +8,7 @@ export const heroContent = [
   {
     title: "Discover, Book, and Indulge with Ease",
     subtitle:
-      "From cozy stays to delightful dining experiences, we've made booking simple and stress-free. Explore top-rated hotels and restaurants near you or around the world, all in one friendly platform.🖐️",
+      "From cozy stays to delightful dining experiences, we've made booking simple and stress-free. Explore top-rated hotels and restaurants near you or around the world.🖐️",
     image: "/hero_b.jpg",
   },
   {
