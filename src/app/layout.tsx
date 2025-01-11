@@ -38,7 +38,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-50`}
       >
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
-          <header>
+          <header className=" bg-white">
             <div className="hidden md:flex">
               <Hero />
             </div>

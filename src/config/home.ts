@@ -18,3 +18,51 @@ export const heroContent = [
     image: "/hero_c.jpg",
   },
 ];
+
+export const menuList = [
+  {
+    id: 1,
+    label: "Rooms",
+    href: "/",
+    category: [
+      {
+        id: 1,
+        label: "Hotel Rooms",
+      },
+      {
+        id: 2,
+        label: "Hall Rooms",
+      },
+      {
+        id: 3,
+        label: "Meeting Rooms",
+      },
+    ],
+  },
+  {
+    id: 2,
+    label: "Tables",
+    href: "/",
+    category: [
+      {
+        id: 1,
+        label: "Hotel Tables",
+      },
+      {
+        id: 2,
+        label: "Restaurant Tables",
+      },
+    ],
+  },
+  {
+    id: 3,
+    label: "Transport",
+    href: "/",
+    category: [
+      {
+        id: 1,
+        label: "Transport",
+      },
+    ],
+  },
+];

@@ -10,7 +10,7 @@ export default function SearchTab() {
           className="flex-1 outline-none text-zinc-700"
         />
         <div className=" bg-red-600 opacity-85 hover:opacity-100 hover:ring-2 ring-red-500 flex items-center justify-end p-3 rounded-full">
-          <IoSearch className="text-white size-5" />
+          <IoSearch className="text-white size-5 cursor-pointer" />
         </div>
       </div>
     </div>
