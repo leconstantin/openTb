@@ -1,3 +1,9 @@
+import Hero from "@/features/home/hero";
+
 export default function Home() {
-  return <div>Open Tab</div>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 }
