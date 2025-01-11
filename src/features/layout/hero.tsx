@@ -41,7 +41,7 @@ export default function Hero() {
             isTransitioning ? "opacity-0" : "opacity-100"
           }`}
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+          <h1 className="text-3xl md:text-6xl font-bold text-white mb-4">
             {currentContent.title}
           </h1>
           <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
