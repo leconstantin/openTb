@@ -13,7 +13,7 @@ export default function Home() {
       <SubHero />
       <SearchTab />
       <MenuList />
-      <AllHotels />
+      <AllHotels />s
     </main>
   );
 }
