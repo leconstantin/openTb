@@ -7,17 +7,19 @@ import React from "react";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <header className=" bg-white">
+      <header className="relative bg-white">
         <div className="hidden md:flex">
           <Hero />
         </div>
-        <div className=" min-h-screen">
+      </header>
+      <main className="relative">
+        <div className="sticky top-0 bg-white">
           <HeaderTop />
           <SearchTab />
           <MenuList />
         </div>
-      </header>
-      {children}
+        {children}
+      </main>
     </>
   );
 }

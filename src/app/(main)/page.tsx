@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>All hotels</main>;
+  return <main className="min-h-screen">Home page</main>;
 }
