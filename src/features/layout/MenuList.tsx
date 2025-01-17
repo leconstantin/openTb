@@ -1,5 +1,6 @@
 "use client";
 import { menuList } from "@/config/home";
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaCarAlt, FaHotel } from "react-icons/fa";
@@ -37,8 +38,11 @@ export default function MenuList() {
             <li key={menu.id}>
               <Link
                 href="/"
-                className="flex flex-col items-center gap-2 text-zinc-500 font-medium text-sm cursor-pointer hover:text-zinc-800 hover:underline hover:underline-offset-8 ease-in-out duration-500 transition-colors  hover:shadow-md rounded-xl px-5 py-2 
-              focus:text-zinc-800 focus:underline focus:underline-offset-8   focus:shadow-md"
+                className={cn(
+                  "flex flex-col items-center gap-2 text-zinc-500 font-medium text-sm cursor-pointer hover:text-zinc-700 hover:underline hover:underline-offset-8 ease-in-out duration-500 transition-colors hover:shadow-md rounded-xl px-5 py-2 focus:text-zinc-700 focus:underline focus:underline-offset-8 focus:shadow-md",
+                  pathname === menu.link_to &&
+                    "text-zinc-800 underline underline-offset-8"
+                )}
               >
                 {icon}
                 {menu.label}
