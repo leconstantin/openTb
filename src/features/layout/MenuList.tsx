@@ -37,7 +37,7 @@ export default function MenuList() {
           return (
             <li key={menu.id}>
               <Link
-                href="/"
+                href={menu.link_to}
                 className={cn(
                   "flex flex-col items-center gap-2 text-zinc-500 font-medium text-sm cursor-pointer hover:text-zinc-700 hover:underline hover:underline-offset-8 ease-in-out duration-500 transition-colors hover:shadow-md rounded-xl px-5 py-2 focus:text-zinc-700 focus:underline focus:underline-offset-8 focus:shadow-md",
                   pathname === menu.link_to &&
